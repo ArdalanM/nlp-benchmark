@@ -38,7 +38,7 @@ def get_args():
     parser.add_argument("--dataset", type=str, default='imdb')
     parser.add_argument("--data_folder", type=str, default="datasets/imdb/han")
     parser.add_argument("--model_folder", type=str, default="models/han/imdb")
-    parser.add_argument("--pretrain",action="store_true", default=True, help="pre train embeddings with word2vec (gensim required)")
+    parser.add_argument("--pretrain",action="store_true", default=False, help="pre train embeddings with word2vec (gensim required)")
     parser.add_argument('--max_feats', type=int, default=10000, help="vocabulary size")
     parser.add_argument('--max_sents', type=int, default=-1, help="max number of sentences per example")
     parser.add_argument('--max_words', type=int, default=-1, help="max word length")
